@@ -1,0 +1,46 @@
+# include <stdio.h>
+int main()
+{
+int choice;
+float radius,length,breadth,side;
+float area , perimeter;
+printf("Select any choice from the following");
+printf("\n circle");
+printf("\n square");
+printf("\n rectangle");
+printf("\n Enter the choice");
+scanf("%d",&choice);
+if (choice==1)
+{
+printf("Enter the radius of circle");
+scanf("%f",& radius);
+area=2*3.14*radius;
+perimeter=2*3.14*radius;
+printf("Area is :%.2f,area");
+printf("\nperimeter is:%.2f,perimeter");
+}
+else if(choice==2)
+{
+printf("Enter the side of square");
+scanf("%f",& side);
+area=side*side;
+perimeter=4*side;
+printf("Area is :%.2f,area");
+printf("\nperimeter is:%.2f,perimeter");
+}
+else if (choice==3)
+{
+printf("Enter the length and breadth of rectangle");
+scanf("%f",& length);
+scanf("%f",& breadth);
+area=length*breadth;
+perimeter=2*length+breadth;
+printf("Area is :%.2f,area");
+printf("\nperimeter is:%.2f,perimeter");
+}
+else
+{
+printf("invalide number");
+}
+return 0;
+
